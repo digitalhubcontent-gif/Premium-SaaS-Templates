@@ -119,7 +119,7 @@ export default function Navbar() {
                     <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                         <button
                             onClick={() => handleNavClick('#contact')}
-                            className="btn btn-primary"
+                            className="btn btn-primary hide-on-mobile"
                             style={{ padding: '10px 22px', fontSize: '0.875rem' }}
                         >
                             Get Started

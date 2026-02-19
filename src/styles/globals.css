@@ -107,7 +107,7 @@ textarea {
    ============================================ */
 .display-xl {
   font-family: var(--font-display);
-  font-size: clamp(3rem, 7vw, 5.5rem);
+  font-size: clamp(2.4rem, 8vw, 5.5rem);
   font-weight: 700;
   line-height: 1.05;
   letter-spacing: -0.03em;
@@ -115,7 +115,7 @@ textarea {
 
 .display-lg {
   font-family: var(--font-display);
-  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-size: clamp(1.6rem, 5vw, 3.5rem);
   font-weight: 700;
   line-height: 1.1;
   letter-spacing: -0.02em;
@@ -507,5 +507,140 @@ textarea {
 @media (max-width: 768px) {
   .cta-box {
     padding: 48px 24px !important;
+  }
+}
+
+/* Hide navbar Get Started button on mobile (hamburger menu has it) */
+@media (max-width: 768px) {
+  .hide-on-mobile {
+    display: none !important;
+  }
+}
+
+/* Hero: center all content on mobile for premium feel */
+@media (max-width: 900px) {
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-desc {
+    max-width: 100% !important;
+    text-align: center;
+  }
+
+  .hero-actions {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .hero-actions>* {
+    flex: 1 1 auto;
+    justify-content: center;
+    text-align: center;
+    min-width: 0;
+  }
+
+  .hero-stats {
+    justify-content: center;
+    gap: 32px !important;
+    flex-wrap: wrap;
+  }
+}
+
+/* ============================================
+   COMPREHENSIVE BREAKPOINTS — ALL SECTIONS
+   ============================================ */
+
+/* Large tablet */
+@media (max-width: 1024px) {
+  :root {
+    --section-padding: 80px 0;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  :root {
+    --section-padding: 60px 0;
+    --container-padding: 0 20px;
+  }
+
+  /* Hero: remove forced full-screen height — eliminates dead space */
+  .hero-section {
+    min-height: 0 !important;
+    padding-top: 100px !important;
+    padding-bottom: 60px !important;
+  }
+
+  /* Reduce glass card padding on mobile */
+  .glass-card {
+    padding: 20px !important;
+  }
+
+  /* Section header spacing */
+  .section-header {
+    margin-bottom: 36px !important;
+  }
+
+  /* Hero stats row */
+  .hero-stats {
+    gap: 20px !important;
+    margin-top: 36px !important;
+    padding-top: 28px !important;
+  }
+}
+
+/* Small phone */
+@media (max-width: 480px) {
+  :root {
+    --section-padding: 48px 0;
+    --container-padding: 0 16px;
+  }
+
+  .display-xl {
+    font-size: 2.2rem !important;
+    line-height: 1.1;
+  }
+
+  .display-lg {
+    font-size: 1.6rem !important;
+  }
+
+  /* Hide process code snippets on tiny screens — saves a lot of vertical space */
+  .process-code {
+    display: none !important;
+  }
+
+  .glass-card {
+    padding: 16px !important;
+  }
+
+  .cta-box {
+    padding: 36px 16px !important;
+    border-radius: 16px !important;
+  }
+
+  .hero-stats {
+    gap: 16px !important;
+    margin-top: 28px !important;
+  }
+}
+
+/* XS phones: 375px and below */
+@media (max-width: 375px) {
+  :root {
+    --section-padding: 40px 0;
+    --container-padding: 0 14px;
+  }
+
+  .display-xl {
+    font-size: 1.95rem !important;
+  }
+
+  .display-lg {
+    font-size: 1.4rem !important;
   }
 }

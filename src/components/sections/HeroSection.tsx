@@ -14,6 +14,7 @@ const fadeUp = {
 export default function HeroSection() {
     return (
         <section
+            className="hero-section"
             style={{
                 minHeight: '100vh',
                 display: 'flex',
@@ -50,7 +51,7 @@ export default function HeroSection() {
                 <div className="hero-grid">
 
                     {/* Left: Text */}
-                    <div>
+                    <div className="hero-content">
                         <motion.div
                             custom={0} initial="hidden" animate="visible" variants={fadeUp}
                             style={{ marginBottom: '24px' }}
@@ -73,6 +74,7 @@ export default function HeroSection() {
 
                         <motion.p
                             custom={2} initial="hidden" animate="visible" variants={fadeUp}
+                            className="hero-desc"
                             style={{
                                 fontSize: '1.125rem',
                                 color: 'var(--text-secondary)',
@@ -86,6 +88,7 @@ export default function HeroSection() {
 
                         <motion.div
                             custom={3} initial="hidden" animate="visible" variants={fadeUp}
+                            className="hero-actions"
                             style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}
                         >
                             <a href="#services" className="btn btn-primary btn-lg">
@@ -102,6 +105,7 @@ export default function HeroSection() {
                         {/* Stats */}
                         <motion.div
                             custom={4} initial="hidden" animate="visible" variants={fadeUp}
+                            className="hero-stats"
                             style={{
                                 display: 'flex', gap: '40px', marginTop: '56px',
                                 paddingTop: '40px', borderTop: '1px solid rgba(255,255,255,0.06)',

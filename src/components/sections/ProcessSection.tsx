@@ -90,12 +90,14 @@ export default function ProcessSection() {
                             </p>
 
                             {/* Code snippet */}
-                            <div style={{
-                                background: 'rgba(0,0,0,0.4)', borderRadius: '8px', padding: '14px',
-                                border: '1px solid rgba(255,255,255,0.05)',
-                                fontFamily: 'monospace', fontSize: '0.8rem', color: '#a855f7',
-                                whiteSpace: 'pre',
-                            }}>
+                            <div
+                                className="process-code"
+                                style={{
+                                    background: 'rgba(0,0,0,0.4)', borderRadius: '8px', padding: '14px',
+                                    border: '1px solid rgba(255,255,255,0.05)',
+                                    fontFamily: 'monospace', fontSize: '0.8rem', color: '#a855f7',
+                                    whiteSpace: 'pre',
+                                }}>
                                 {step.code}
                             </div>
                         </motion.div>
