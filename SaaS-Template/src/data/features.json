@@ -1,0 +1,40 @@
+{
+  "features": [
+    {
+      "id": 1,
+      "icon": "⚡",
+      "title": "Lightning Fast",
+      "description": "Built for speed. Instant results with sub-second load times and real-time updates."
+    },
+    {
+      "id": 2,
+      "icon": "🔒",
+      "title": "Bank-Grade Security",
+      "description": "Enterprise-level encryption and compliance. Your data is protected with military-grade security."
+    },
+    {
+      "id": 3,
+      "icon": "📊",
+      "title": "Advanced Analytics",
+      "description": "Deep insights into your business. Track, measure, and optimize with real-time dashboards."
+    },
+    {
+      "id": 4,
+      "icon": "🔄",
+      "title": "Seamless Integration",
+      "description": "Connects with 500+ tools. Integrate with your favorite apps in minutes, no coding required."
+    },
+    {
+      "id": 5,
+      "icon": "👥",
+      "title": "Team Collaboration",
+      "description": "Work together effortlessly. Real-time collaboration, comments, and permissions management."
+    },
+    {
+      "id": 6,
+      "icon": "🎯",
+      "title": "Precision Targeting",
+      "description": "Reach the right audience. AI-powered targeting ensures your message lands with impact."
+    }
+  ]
+}

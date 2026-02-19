@@ -1,0 +1,31 @@
+{
+  "caseStudies": [
+    {
+      "id": 1,
+      "company": "TechFlow",
+      "logo": "🏢",
+      "quote": "40% increase in productivity",
+      "challenge": "Manual workflow management causing delays and inefficiencies",
+      "solution": "Implemented automated workflows and real-time collaboration",
+      "results": "40% productivity increase, 30 hours saved per week, $500K annual savings"
+    },
+    {
+      "id": 2,
+      "company": "CloudScale Inc",
+      "logo": "☁️",
+      "quote": "95% faster deployment",
+      "challenge": "Scattered tools and manual processes slowing down development",
+      "solution": "Centralized platform with integrated development tools",
+      "results": "95% faster deployments, reduced bugs by 60%, team satisfaction up 87%"
+    },
+    {
+      "id": 3,
+      "company": "DataViz Co",
+      "logo": "📊",
+      "quote": "10x better insights",
+      "challenge": "Difficulty tracking and analyzing key business metrics",
+      "solution": "Advanced analytics dashboard with custom reporting",
+      "results": "10x better insights, data-driven decisions, 25% revenue growth"
+    }
+  ]
+}

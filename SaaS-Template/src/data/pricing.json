@@ -1,0 +1,60 @@
+{
+  "tiers": [
+    {
+      "id": 1,
+      "name": "Starter",
+      "price": 29,
+      "period": "month",
+      "description": "Perfect for small teams just getting started",
+      "cta": "Start Free Trial",
+      "features": [
+        "Up to 5 team members",
+        "5 GB storage",
+        "Basic analytics",
+        "Email support",
+        "API access",
+        "Monthly reports"
+      ],
+      "highlighted": false
+    },
+    {
+      "id": 2,
+      "name": "Professional",
+      "price": 99,
+      "period": "month",
+      "description": "Most popular for growing businesses",
+      "cta": "Start Free Trial",
+      "features": [
+        "Unlimited team members",
+        "500 GB storage",
+        "Advanced analytics",
+        "Priority support",
+        "API access",
+        "Custom integrations",
+        "SSO & 2FA",
+        "Advanced permissions"
+      ],
+      "highlighted": true,
+      "badge": "Most Popular"
+    },
+    {
+      "id": 3,
+      "name": "Enterprise",
+      "price": "Custom",
+      "period": "contact",
+      "description": "For large organizations with custom needs",
+      "cta": "Contact Sales",
+      "features": [
+        "Everything in Professional",
+        "Unlimited storage",
+        "Dedicated support",
+        "Custom workflows",
+        "On-premise option",
+        "SLA guarantee",
+        "Advanced security",
+        "Training & onboarding"
+      ],
+      "highlighted": false
+    }
+  ]
+}

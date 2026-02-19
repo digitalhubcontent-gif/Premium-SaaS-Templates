@@ -1,0 +1,49 @@
+{
+  "testimonials": [
+    {
+      "id": 1,
+      "name": "Sarah Chen",
+      "role": "CEO",
+      "company": "TechFlow",
+      "avatar": "👩‍💼",
+      "content": "This platform transformed how we manage our workflow. We've saved over 40 hours per week in manual processes.",
+      "rating": 5
+    },
+    {
+      "id": 2,
+      "name": "Michael Rodriguez",
+      "role": "Director of Operations",
+      "company": "CloudScale Inc",
+      "avatar": "👨‍💼",
+      "content": "The support team is incredible. Every question answered within minutes. Best investment we've made.",
+      "rating": 5
+    },
+    {
+      "id": 3,
+      "name": "Emma Johnson",
+      "role": "Product Manager",
+      "company": "DataViz Co",
+      "avatar": "👩‍💼",
+      "content": "Implementation was seamless. Within 24 hours we were fully operational. Highly recommend!",
+      "rating": 5
+    },
+    {
+      "id": 4,
+      "name": "James Wilson",
+      "role": "CTO",
+      "company": "FinTech Labs",
+      "avatar": "👨‍💼",
+      "content": "The security features gave us peace of mind. Compliance was a breeze with this platform.",
+      "rating": 5
+    },
+    {
+      "id": 5,
+      "name": "Lisa Martinez",
+      "role": "Founder",
+      "company": "StartupXYZ",
+      "avatar": "👩‍💼",
+      "content": "Exactly what we needed to scale our business. Flexible pricing and amazing product.",
+      "rating": 5
+    }
+  ]
+}
