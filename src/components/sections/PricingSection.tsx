@@ -104,7 +104,7 @@ export default function PricingSection() {
                     </div>
                 </motion.div>
 
-                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '24px', alignItems: 'start' }}>
+                <div className="pricing-grid">
                     {plans.map((plan, i) => (
                         <motion.div
                             key={plan.name}

@@ -42,7 +42,7 @@ export default function ComingSoonPage() {
     return (
         <div style={{
             minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center',
-            background: '#050508', padding: '40px 24px', position: 'relative', overflow: 'hidden',
+            background: '#050508', padding: '24px 20px', position: 'relative', overflow: 'hidden',
         }}>
             {/* Orbs */}
             <div aria-hidden="true">
@@ -67,7 +67,7 @@ export default function ComingSoonPage() {
                     </p>
 
                     {/* Countdown */}
-                    <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', marginBottom: '48px' }}>
+                    <div style={{ display: 'flex', gap: '12px', justifyContent: 'center', marginBottom: '48px', flexWrap: 'wrap' }}>
                         {[
                             { value: days, label: 'Days' },
                             { value: hours, label: 'Hours' },
@@ -75,16 +75,16 @@ export default function ComingSoonPage() {
                             { value: seconds, label: 'Seconds' },
                         ].map((item) => (
                             <div key={item.label} style={{
-                                padding: '20px 24px', minWidth: '90px',
+                                padding: '16px 12px', minWidth: '72px', flex: '1 1 60px', maxWidth: '120px',
                                 background: 'var(--bg-card)',
                                 border: '1px solid var(--border-card)',
                                 borderRadius: 'var(--radius-lg)',
                                 backdropFilter: 'blur(20px)',
                             }}>
-                                <div style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: '2rem', fontWeight: 700, color: '#f8fafc', letterSpacing: '-0.02em' }}>
+                                <div style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: 'clamp(1.4rem, 5vw, 2rem)', fontWeight: 700, color: '#f8fafc', letterSpacing: '-0.02em' }}>
                                     {String(item.value).padStart(2, '0')}
                                 </div>
-                                <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)', marginTop: '4px', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
+                                <div style={{ fontSize: '0.7rem', color: 'var(--text-muted)', marginTop: '4px', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
                                     {item.label}
                                 </div>
                             </div>
@@ -100,7 +100,7 @@ export default function ComingSoonPage() {
                     ) : (
                         <form
                             onSubmit={(e) => { e.preventDefault(); setJoined(true); }}
-                            style={{ display: 'flex', gap: '12px', maxWidth: '440px', margin: '0 auto' }}
+                            style={{ display: 'flex', flexDirection: 'column', gap: '12px', maxWidth: '440px', margin: '0 auto' }}
                         >
                             <input
                                 type="email"
@@ -109,12 +109,12 @@ export default function ComingSoonPage() {
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
                                 style={{
-                                    flex: 1, padding: '14px 18px', borderRadius: '9999px',
+                                    width: '100%', padding: '14px 18px', borderRadius: '9999px',
                                     background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)',
-                                    color: '#f8fafc', fontSize: '0.9rem', outline: 'none',
+                                    color: '#f8fafc', fontSize: '0.9rem', outline: 'none', boxSizing: 'border-box',
                                 }}
                             />
-                            <button type="submit" className="btn btn-primary" style={{ whiteSpace: 'nowrap' }}>
+                            <button type="submit" className="btn btn-primary" style={{ whiteSpace: 'nowrap', justifyContent: 'center' }}>
                                 Notify Me
                             </button>
                         </form>

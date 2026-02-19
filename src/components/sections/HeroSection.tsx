@@ -47,7 +47,7 @@ export default function HeroSection() {
             </div>
 
             <div style={{ maxWidth: '1200px', margin: '0 auto', width: '100%', position: 'relative', zIndex: 1 }}>
-                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '64px', alignItems: 'center' }}>
+                <div className="hero-grid">
 
                     {/* Left: Text */}
                     <div>
@@ -187,7 +187,7 @@ export default function HeroSection() {
 
                         {/* Floating mini card */}
                         <div
-                            className="glass-card"
+                            className="glass-card hero-float-card"
                             style={{
                                 position: 'absolute', bottom: '-24px', left: '-24px',
                                 padding: '16px 20px', display: 'flex', alignItems: 'center', gap: '12px',

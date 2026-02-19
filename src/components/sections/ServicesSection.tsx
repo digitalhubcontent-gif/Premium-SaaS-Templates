@@ -59,11 +59,7 @@ export default function ServicesSection() {
                     <p>Tailored AI solutions to streamline, innovate, and scale your business.</p>
                 </motion.div>
 
-                <div style={{
-                    display: 'grid',
-                    gridTemplateColumns: 'repeat(3, 1fr)',
-                    gap: '20px',
-                }}>
+                <div className="grid-3col services-grid" style={{ gap: '20px' }}>
                     {services.map((service, i) => (
                         <motion.div
                             key={service.title}

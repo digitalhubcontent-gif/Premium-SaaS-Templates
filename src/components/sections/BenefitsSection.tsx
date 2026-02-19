@@ -50,7 +50,7 @@ export default function BenefitsSection() {
                 </motion.div>
 
                 {/* Benefit cards */}
-                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '24px', marginBottom: '80px' }}>
+                <div className="grid-3col" style={{ gap: '24px', marginBottom: '80px' }}>
                     {benefits.map((benefit, i) => (
                         <motion.div
                             key={benefit.title}

@@ -369,8 +369,47 @@ textarea {
 }
 
 /* ============================================
-   RESPONSIVE
+   LAYOUT GRID CLASSES (controlled by CSS, not inline styles)
    ============================================ */
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: center;
+}
+
+.grid-3col {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  align-items: start;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 48px;
+  align-items: start;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+/* ============================================
+   RESPONSIVE BREAKPOINTS
+   ============================================ */
+
 @media (max-width: 768px) {
   :root {
     --section-padding: 80px 0;
@@ -378,28 +417,6 @@ textarea {
 
   .section-header {
     margin-bottom: 48px;
-  }
-}
-
-@media (max-width: 900px) {
-  #services .container>div:last-child {
-    grid-template-columns: repeat(2, 1fr) !important;
-  }
-}
-
-@media (max-width: 600px) {
-  #services .container>div:last-child {
-    grid-template-columns: 1fr !important;
-  }
-}
-
-@media (max-width: 768px) {
-  #benefits .container>div:first-of-type {
-    grid-template-columns: 1fr !important;
-  }
-
-  #contact .container>div:last-child {
-    grid-template-columns: 1fr !important;
   }
 
   .desktop-nav {
@@ -411,10 +428,84 @@ textarea {
   }
 }
 
+/* Hero: tablet → single column */
 @media (max-width: 900px) {
-  #plans .container>div:last-child {
-    grid-template-columns: 1fr !important;
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .hero-grid>div:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Hero: hide floating card & fix stats on mobile */
+@media (max-width: 768px) {
+  .hero-float-card {
+    display: none !important;
+  }
+
+  .hero-stats {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px !important;
+  }
+}
+
+/* Hero: tighter padding on small phones */
+@media (max-width: 480px) {
+  .hero-section {
+    padding-top: 100px !important;
+    padding-bottom: 60px !important;
+  }
+}
+
+/* 3-col grids → 2 col on tablet */
+@media (max-width: 900px) {
+  .grid-3col {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .process-connector {
+    display: none !important;
+  }
+
+  .pricing-grid {
+    grid-template-columns: 1fr;
     max-width: 480px;
     margin: 0 auto;
+  }
+}
+
+/* 3-col grids → 1 col on phone */
+@media (max-width: 600px) {
+  .grid-3col {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Contact: stack on mobile */
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
+
+/* Form row: stack on small phones */
+@media (max-width: 480px) {
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* CTA: reduce padding on mobile */
+@media (max-width: 768px) {
+  .cta-box {
+    padding: 48px 24px !important;
   }
 }

@@ -44,10 +44,10 @@ export default function ProcessSection() {
                     <p>A simple, effective approach to deliver results that last.</p>
                 </motion.div>
 
-                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '24px', position: 'relative' }}>
-                    {/* Connecting line */}
+                <div className="grid-3col" style={{ gap: '24px', position: 'relative' }}>
                     <div
                         aria-hidden="true"
+                        className="process-connector"
                         style={{
                             position: 'absolute',
                             top: '60px',

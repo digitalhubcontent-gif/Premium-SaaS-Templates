@@ -18,6 +18,7 @@ export default function CTASection() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.7 }}
+                    className="cta-box"
                     style={{
                         textAlign: 'center', padding: '80px 40px',
                         borderRadius: '24px',

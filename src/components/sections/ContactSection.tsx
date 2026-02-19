@@ -29,7 +29,7 @@ export default function ContactSection() {
                     <p>Have questions or ready to start? Reach out and we&apos;ll respond within 24 hours.</p>
                 </motion.div>
 
-                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1.5fr', gap: '48px', alignItems: 'start', maxWidth: '960px', margin: '0 auto' }}>
+                <div className="contact-grid">
                     {/* Contact info */}
                     <motion.div
                         initial={{ opacity: 0, x: -20 }}
@@ -83,7 +83,7 @@ export default function ContactSection() {
                             </div>
                         ) : (
                             <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
-                                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px' }}>
+                                <div className="form-row">
                                     {[
                                         { id: 'name', label: 'Full Name', placeholder: 'John Smith', type: 'text' },
                                         { id: 'email', label: 'Email Address', placeholder: 'john@company.com', type: 'email' },
